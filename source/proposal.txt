@@ -1,0 +1,192 @@
+PROPOSAL BISNIS — DISKUSI TIM
+One-Stop IT Solution
+Sekolah · Yayasan · Perkantoran
+2026 · Dhayu Fandy Stiawan
+
+KONSEP
+
+01
+
+Satu Pintu, Tujuh Layanan yang Terhubung
+
+Setiap layanan saling mengunci: satu project membuka peluang layanan lain yang berjalan bulanan.
+
+1. Hardware
+pengadaan + instalasi
+
+2. Infrastruktur
+server · jaringan · CCTV
+
+3. Sistem
+aplikasi sesuai kebutuhan
+
+4. Recurring
+hosting · AI · maintenance
+
+Urutan prioritas: produk jasa dulu → infrastruktur & hardware → recurring (hosting, AI, colocation).
+• Project-based (jasa, infrastruktur, hardware) → uang masuk cepat • Recurring (hosting, API AI, maintenance, colocation) → penghasilan stabil tiap bulan • Opsi kredit (cicil) wajib di-bundle dengan paket colocation
+
+LAYANAN
+Tujuh Layanan & Prioritasnya
+
+1 Pembuatan Sistem Custom 2 Pelatihan Staff 3 Infrastruktur IT 4 Pengadaan Hardware 5 Domain & Hosting 6 API Key AI 7 Colocation
+
+Website sekolah, PPDB online, absensi, inventaris Maintenance sistem & pemanfaatan AI Server, jaringan internet, CCTV Perangkat IT + jasa instalasi Shared hosting, VPS, dedicated Akses AI untuk klien (reseller / gateway) Sewa rack server ± maintenance rutin
+
+Produk jasa lebih dulu (modal kecil, langsung jalan), infrastruktur & hardware menyusul, colocation dijual via bundling opsi kredit.
+
+02
+Prioritas 1 Prioritas 1 Prioritas 2 Prioritas 2 Prioritas 3 Prioritas 3 Bundling opsi kredit
+
+PROVIDER
+Provider & Mitra Pendukung Layanan
+Tokease
+Penyedia API Key AI Mitra penyedia
+PT Registrasi Neva Angkasa
+Registrasi Domain Mitra penyedia
+Mitra resmi mendukung penyediaan layanan AI, colocation, domain, dan server.
+
+03
+Perwira Cloud
+Colocation · AS211407 Mitra penyedia
+PT Ref Group Indonesia
+Server Fisik (Dedicated) Mitra penyedia
+
+SKEMA BAYAR
+
+04
+
+Empat Skema Pembayaran
+
+Jual Putus
+Bayar penuh di awal. Untuk hardware & instalasi. Tambahkan kontrak maintenance tahunan agar tidak putus total.
+
+Bagi Hasil
+Gratis di depan, hasil dibagi per bulan/usage. Untuk sistem custom & API AI. Wajib ada metering akurat.
+
+Bayar Cicil
+Wajib bundling paket colocation — cicilan jadi pintu masuk layanan colocation. Klausul kepemilikan aset harus tertulis.
+
+Per Projek
+Akad tanpa jam kerja, bayar per project. Untuk teknisi/dev freelance dan model staffing ke klien.
+
+Prinsip wajib: DP 50% (dengan margin 50%) sebelum kerja — tanpa kecuali. · Kombinasi putus/cicil untuk kas hari ini + recurring untuk masa depan.
+
+TIM
+Struktur Tim 3 Orang
+
+1
+Lead Infra & Koordinator
+Jaringan · CCTV · server · instalasi
+Koordinasi project, keuangan, dokumentasi teknis tiap instalasi
+
+2
+Programmer
+Sistem custom · website · integrasi AI
+Fokus coding & otomasi hosting — dibangun base system yang dijual berkali-kali
+
+05
+3
+Sales
+Cari client · negosiasi · follow-up Dokumentasi foto project untuk portofolio & menjaga pipeline
+
+Aturan main: kapasitas eksekusi menentukan jumlah project — maksimal 1–2 infra paralel sambil kerja. Programmer tidak dipekerjakan untuk hal non-coding.
+
+ROADMAP
+Tiga Fase Eksekusi
+Fase 1 — Produk Jasa
+• Sistem custom: website sekolah, PPDB, absensi
+• Pelatihan staff & pemanfaatan AI • Modal kecil, langsung jalan, buat
+portofolio • DP 50% — aris tanpa modal barang
+
+Fase 2 — Infrastruktur
+• Infrastruktur: server, jaringan, CCTV • Pengadaan hardware + instalasi • Barang diorder setelah DP — tanpa
+modal besar • Standardisasi agar mudah
+didelegasikan
+
+06
+Fase 3 — Recurring & Skala
+• Hosting, domain, VPS & API AI • Opsi kredit wajib bundling colocation • Income recurring mendekati gaji →
+full-time • Badan usaha resmi (NIB → CV/PT)
+untuk invoice
+
+Semua dijalankan sambil kerja: fisik di sore/weekend, pekerjaan digital berjalan di latar belakang.
+
+RISIKO
+Risiko Utama & Mitigasi
+Konflik kepentingan dengan kantor
+Tidak memakai aset, waktu, atau jaringan kantor. Market dipilih agar tidak overlap. Cek kontrak soal moonlighting.
+
+07
+Keuangan campur
+Rekening khusus bisnis + pencatatan sejak hari pertama. DP 50% wajib; pelunasan sebelum serah terima.
+
+Kapasitas terbatas
+Tidak menerima project melebihi kapasitas. Telat = reputasi hancur. Standardisasi agar mudah didelegasikan.
+
+Klien lambat bayar
+Invoice resmi, kesepakatan tertulis, klausul kepemilikan aset untuk cicilan. Mulai dari market terdekat.
+
+MAPPING
+Skema Bayar yang Cocok per Layanan
+
+Layanan
+
+Jual Putus
+
+Bagi Hasil
+
+Sistem Custom
+
+✓
+
+✓✓
+
+Pelatihan
+
+✓
+
+–
+
+Infrastruktur
+
+✓
+
+–
+
+API AI
+
+–
+
+✓✓
+
+Colocation
+
+✓
+
+–
+
+Domain & Hosting
+
+–
+
+✓
+
+Pengadaan Hardware
+
+✓✓
+
+–
+
+✓✓ sangat cocok · ✓ cocok · – tidak cocok · * cicil wajib bundling paket colocation
+
+Cicil ✓ ✓ ✓✓ – ✓✓* ✓ ✓
+
+08
+Per Projek ✓ ✓✓ ✓ ✓ ✓ ✓ ✓
+
+Yang Perlu Kita Sepakati Hari Ini
+1 Setuju mulai Fase 1 — hardware + infrastruktur kecil? 2 Pembagian peran & bagi hasil antar anggota tim? 3 Modal awal & sistem kas (rekening bisnis terpisah)? 4 Nama brand & badan usaha (PT. Perorangan Kab. Bogor & NIB dulu cukup)? 5 Klien pertama: sekolah / yayasan mana di sekitar kita?
+Diskusi lanjutan: pricing detail · nama brand · kontrak penawaran
+
+

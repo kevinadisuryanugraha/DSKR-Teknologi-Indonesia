@@ -1,0 +1,325 @@
+DSKR Teknologi Indonesia — Brand Kit 2026
+DSKR • Brand Kit 2026
+Analisis
+Identitas
+Warna
+Tipografi
+Brand Voice
+Kolateral
+Strategi
+Brand Identity Document 2026
+One-Stop
+IT Solution
+Indonesia
+DSKR Teknologi Indonesia hadir sebagai mitra teknologi terpercaya untuk Sekolah, Yayasan, dan Perkantoran — menyatukan 7 layanan IT dalam satu ekosistem yang saling memperkuat.
+Sistem Custom
+Infrastruktur IT
+Colocation
+API AI
+Hosting
+Analisis Bisnis Mendalam
+SWOT Analysis
+DSKR Teknologi Indonesia
+Strengths — Kekuatan
+Keunggulan Kompetitif
+Model "One-Stop" — 7 layanan dalam ekosistem terintegrasi, klien tidak perlu mencari vendor terpisah
+Fase 1 butuh modal sangat kecil (jasa digital = 0 stok barang)
+Revenue stream ganda: project-based (kas langsung) + recurring (income stabil)
+DP 50% sebelum kerja = zero modal working capital untuk project
+Colocation bundling dengan cicilan = customer lock-in otomatis
+Mitra resmi sudah tersedia (Tokease, Perwira Cloud, RNA.id, PT Ref Group)
+Market target (sekolah/yayasan) relatif less price-sensitive untuk layanan IT
+Weaknesses — Kelemahan
+Risiko Internal
+Tim hanya 3 orang → kapasitas eksekusi sangat terbatas
+Moonlighting sambil kerja = energi terbagi, risiko burnout
+Belum ada portofolio — sulit meyakinkan klien pertama
+Ketergantungan tinggi pada masing-masing anggota tim (single point of failure)
+Badan usaha belum resmi → sulit buat invoice formal & tender
+Cashflow bisa negatif jika klien lambat bayar pelunasan
+Programmer tidak boleh untuk non-coding → bottle neck operasional
+Opportunities — Peluang
+Potensi Pasar
+Ratusan ribu sekolah di Indonesia masih sangat under-digitalized
+Program PPDB online kini diwajibkan banyak daerah → permintaan nyata
+AI adoption di institusi pendidikan masih awal → early mover advantage
+Pasar SMB (UKM) dan yayasan jarang dilayani vendor IT besar
+Mitra colocation (Perwira Cloud AS211407) membuka peluang B2B premium
+Pelatihan AI staff = recurring contract training tahunan
+Reseller AI Key bisa memberikan margin 20–40% tanpa capex
+Threats — Ancaman
+Faktor Eksternal
+Kompetisi dengan vendor IT yang sudah mapan & berportofolio
+Klien sekolah sering memilih harga murah di atas kualitas
+Risiko konflik kepentingan dengan kantor utama anggota tim
+Keterlambatan pembayaran instansi pemerintah/sekolah (siklus anggaran)
+Perkembangan teknologi cepat → perlu continuous learning
+AI tools semakin murah → pressure margin pada layanan sistem custom
+Model Bisnis & Alur Revenue
+Fase 1 · Prioritas Utama
+Produk Jasa Digital
+Website sekolah, PPDB online
+Sistem absensi & inventaris
+Pelatihan staff & AI
+→ Modal nol, portofolio cepat
+Fase 2 · Setelah Portofolio
+Infrastruktur & Hardware
+Server, jaringan, CCTV
+Pengadaan hardware + instalasi
+Barang diorder setelah DP
+→ Margin capex 20–40%
+Fase 3 · Skala & Stabilitas
+Recurring Income
+Hosting, VPS, Domain
+API AI reseller
+Colocation bundling kredit
+→ Income bulanan stabil
+Arus Kas Harian
+Project-Based Revenue
+Sistem custom, infrastruktur, hardware, pelatihan. Bayar per project dengan DP 50% di awal. Kas masuk cepat, cocok untuk operasional awal. Target: 1–2 project paralel maksimal agar kualitas terjaga.
+Arus Kas Masa Depan
+Recurring Revenue
+Hosting, API AI, maintenance contract, colocation. Dibayar bulanan/tahunan otomatis. Setiap project yang selesai membuka pintu recurring — ini adalah "aset" jangka panjang bisnis. Target: gaji bulanan tim dari recurring saja.
+Peta Layanan (7 Services)
+1
+Pembuatan Sistem Custom
+Website sekolah, PPDB, absensi, inventaris
+PRIORITAS 1
+2
+Pelatihan Staff
+Maintenance sistem & pemanfaatan AI
+PRIORITAS 1
+3
+Infrastruktur IT
+Server, jaringan internet, CCTV
+PRIORITAS 2
+4
+Pengadaan Hardware
+Perangkat IT + jasa instalasi
+PRIORITAS 2
+5
+Domain & Hosting
+Shared hosting, VPS, dedicated
+PRIORITAS 3
+6
+API Key AI
+Akses AI untuk klien — reseller/gateway
+PRIORITAS 3
+7
+Colocation
+Sewa rack server ± maintenance rutin
+BUNDLING KREDIT
+Identitas Visual
+Sistem Logo
+DSKR Teknologi Indonesia
+Logo DSKR mencerminkan kecepatan, arah, dan kepercayaan — tiga nilai inti yang menjadi fondasi layanan IT profesional.
+Versi Utama · Background Terang
+DSKR
+TEKNOLOGI INDONESIA
+Versi Teks (Fallback)
+Penggunaan di Background Gelap
+Gunakan logo original di atas background navy, gelap, atau foto. Pastikan kontras cukup agar elemen merah dan teks tetap terbaca.
+Navy #152342
+Hitam #0D1829
+Foto Gelap
+✓ LAKUKAN
+Gunakan logo original dengan proporsi tetap
+Berikan clear space minimal setara tinggi huruf "D" di semua sisi
+Gunakan di background terang (putih, abu terang) atau gelap (navy, hitam)
+Pastikan logo selalu terbaca dengan kontras cukup
+Gunakan file vektor (SVG/AI) untuk cetak material berukuran besar
+Minta tim desainer untuk aset resmi dari file master
+✗ JANGAN
+Jangan ubah warna merah atau navy menjadi warna lain
+Jangan stretch, squish, atau distorsi proporsi logo
+Jangan letakkan di atas background warna cerah yang bentrok
+Jangan tambahkan shadow, outline, atau efek lain pada logo
+Jangan potong atau crop bagian elemen logo manapun
+Jangan gunakan logo di bawah ukuran 32px tinggi (digital) / 10mm (cetak)
+Sistem Warna
+Color Palette
+Resmi DSKR
+Palet warna DSKR dibangun di atas fondasi Navy — melambangkan kepercayaan dan profesionalisme — dengan aksen Merah yang mencerminkan energi dan ketegasan bertindak.
+DSKR Navy
+#152342 · RGB 21,35,66
+Primary brand color. Logo, heading, header.
+Navy Dark
+#0D1829 · RGB 13,24,41
+Dark background, card background.
+DSKR Red
+#CC1927 · RGB 204,25,39
+Accent, CTA, highlights, priority badges.
+Navy Muted
+#2A4070 · RGB 42,64,112
+Secondary elements, icons, dividers.
+Brand Gray
+#64686D · RGB 100,104,109
+Body text, taglines, descriptions.
+Surface Light
+#F4F6FA · RGB 244,246,250
+Page background, card background.
+Kombinasi Utama
+Solusi IT Terpercaya
+Navy Dark + White + Red Accent
+Kombinasi Dokumen
+Proposal Resmi DSKR
+Light Surface + Navy + Red Accent
+Sistem Tipografi
+Typography Scale
+Plus Jakarta Sans dipilih karena dikembangkan oleh desainer Indonesia, cocok untuk pasar lokal, modern, dan sangat legible di semua ukuran layar.
+Display
+56px · ExtraBold 800
+Tracking: -0.03em
+DSKR
+Heading 1
+36px · ExtraBold 800
+Line height: 1.1
+One-Stop IT Solution
+Heading 2
+24px · Bold 700
+Line height: 1.2
+Infrastruktur IT Terpercaya
+Heading 3
+18px · Bold 700
+Line height: 1.3
+Layanan Colocation & Hosting Premium
+Body Regular
+15px · Regular 400
+Line height: 1.7
+DSKR menyediakan layanan IT menyeluruh untuk institusi pendidikan dan perkantoran di Indonesia — dari sistem digital hingga infrastruktur fisik — dalam satu ekosistem yang saling terhubung.
+Caption
+12px · Regular 400
+Color: Gray 500
+Semua layanan dapat dikombinasikan sesuai kebutuhan klien. Hubungi tim kami untuk konsultasi gratis dan penawaran terbaik.
+Label / Tag
+11px · Bold 700
+Tracking: 0.08em
+PRIORITAS 1 · JASA DIGITAL
+Panduan Penggunaan Font
+Digital (Web & App)
+Import dari Google Fonts: Plus Jakarta Sans, weight 400, 500, 600, 700, 800. Gunakan system-ui sebagai fallback. Minimal body size 14px.
+Print (Dokumen, Cetak)
+Download Plus Jakarta Sans dari Google Fonts dan install secara lokal. Untuk dokumen Word: gunakan Calibri atau Arial sebagai pengganti jika Plus Jakarta Sans tidak tersedia.
+Brand Voice & Messaging
+Suara Brand
+DSKR
+DSKR berbicara sebagai mitra profesional yang paham kebutuhan teknologi institusi — tegas, mudah dipahami, dan solutif tanpa jargon berlebihan.
+Solutif
+Setiap komunikasi menawarkan solusi konkret, bukan sekadar fitur atau spesifikasi teknis.
+Terpercaya
+Transparan soal proses, harga, dan timeline. Tidak over-promise, selalu under-commit over-deliver.
+Lokal & Relevan
+Paham konteks sekolah dan institusi Indonesia — budaya kerja, anggaran, dan regulasi setempat.
+Progresif
+Selalu membawa perspektif teknologi terkini — AI, cloud, otomasi — dengan cara yang mudah diadopsi.
+✓ Gunakan Nada Ini
+"Sistem PPDB online kami sudah digunakan 3 sekolah di Bogor — proses pendaftaran siswa jadi 80% lebih cepat dan tanpa antrian. Kami siap konsultasi gratis untuk Bapak/Ibu."
+✗ Hindari Nada Ini
+"Kami menyediakan solusi teknologi informasi berbasis cloud dengan arsitektur microservices yang scalable dan high-availability untuk transformasi digital institusi Anda."
+✓ Tagline yang Efektif
+"Teknologi yang Bekerja untuk Anda" / "Satu Mitra, Semua Layanan IT" / "Dari Sistem hingga Server — Kami Urus Semuanya"
+✗ Tagline yang Lemah
+"Solusi IT Terdepan dan Terpercaya untuk Era Digital 5.0" / "Inovasi Tanpa Batas untuk Transformasi Digital Masa Depan"
+Brand Collateral
+Material Resmi
+Template material yang konsisten membangun kesan profesional dan kepercayaan klien sejak kontak pertama.
+Kartu Nama
+D
+■
+DSKR
+TEKNOLOGI INDONESIA
+Dhayu Fandy Stiawan
+Lead Infra & Koordinator · Co-Founder
+Kontak
++62 xxx-xxxx-xxxx
+dhayu@dskr.id
+www.dskr.id
+Satu Mitra · Semua Layanan IT
+Spesifikasi Kartu Nama
+Ukuran
+85 × 55 mm (standar Indonesia)
+Material
+Art Carton 310–350 gsm
+Finishing
+Laminasi Doff (matte) + Spot UV logo
+Cetak
+CMYK 4/4 (bolak-balik)
+Sisi Depan
+Background Navy Dark + teks putih
+Sisi Belakang
+Background putih + navy + aksen merah
+Font
+Plus Jakarta Sans, min 7pt
+Bleed
+3mm di semua sisi
+Email Signature
+From: Dhayu Fandy Stiawan &lt;dhayu@dskr.id&gt; · Subject: Penawaran Layanan IT — DSKR Teknologi Indonesia
+Yth. Bapak/Ibu Kepala Sekolah,
+Terima kasih atas kesempatan diskusi hari ini. Berikut kami lampirkan proposal layanan...
+Dhayu Fandy Stiawan
+Lead Infrastruktur & Koordinator
+DSKR Teknologi Indonesia
+📱 +62 xxx-xxxx-xxxx &nbsp;|&nbsp; ✉️ dhayu@dskr.id &nbsp;|&nbsp; 🌐 www.dskr.id
+One-Stop IT Solution · Sekolah · Yayasan · Perkantoran
+Kop Surat / Letterhead
+D■ DSKR
+TEKNOLOGI INDONESIA
+www.dskr.id · info@dskr.id
++62 xxx-xxxx-xxxx · Indonesia
+Bogor, 23 November 2026
+Yth. Kepala SMA Negeri 1 Bogor
+Jl. Ir. H. Juanda No.16, Bogor
+Perihal: Penawaran Layanan Pembuatan Website & Sistem PPDB Online
+Dengan hormat,
+Bersama surat ini, kami DSKR Teknologi Indonesia bermaksud menawarkan layanan pembuatan sistem digital untuk mendukung proses Penerimaan Peserta Didik Baru (PPDB) dan website sekolah secara terintegrasi...
+DSKR Teknologi Indonesia · Dokumen Resmi
+Hal. 1 / 3
+Template Media Sosial
+DSKR Teknologi
+One-Stop IT Solution · Indonesia
+LinkedIn / Instagram Post
+🏫 Sekolah Anda masih pakai sistem PPDB manual? DSKR hadir dengan solusi PPDB online yang mudah diimplementasikan — hemat waktu, minim error, dan bisa diakses orang tua dari mana saja.
+#DSKRTeknologi #PPDBOnline #TeknologiPendidikan #ITSolution
+Promo Layanan
+DSKR Teknologi Indonesia
+Konten Promosi
+🚀 Paket Starter Digital Sekolah — Website + PPDB Online + Pelatihan Staff. Konsultasi GRATIS. DP 50%, langsung jalan. Hubungi kami sekarang!
+#TeknoloITIndonesia #DSKRTeknologi #WebsiteSekolah
+Rekomendasi Strategis
+Action Plan
+90 Hari Pertama
+Berdasarkan analisis proposal, berikut prioritas tindakan untuk membangun fondasi bisnis yang kuat dari nol.
+30 Hari Pertama · Fondasi
+Setup & Quick Win
+Daftar PT Perorangan + NIB di OSS (1 hari, gratis)
+Buka rekening bisnis terpisah (BCA/Mandiri)
+Register domain dskr.id + setup email profesional
+Buat 1 paket produk jelas: "Paket Starter Sekolah"
+Hubungi 10 sekolah/yayasan terdekat untuk pitching
+Targetkan 1 klien pertama dalam bulan pertama
+30–60 Hari · Eksekusi
+Build & Deliver
+Eksekusi project pertama dengan dokumentasi foto lengkap
+Buat "base system" website sekolah yang bisa dijual ulang
+Setup hosting & domain untuk klien pertama
+Kirim proposal ke 20 prospek baru dari portofolio project 1
+Setup sistem pencatatan keuangan sederhana (Google Sheets)
+Mulai pipeline project 2 paralel jika kapasitas ada
+60–90 Hari · Recurring
+Stabilisasi Income
+Konversi klien project ke kontrak maintenance tahunan
+Aktifkan reseller API AI via Tokease
+Tawarkan hosting & domain add-on ke klien existing
+Review keuangan: sudah ada recurring minimal 1 klien?
+Evaluasi kapasitas: perlu tambah anggota tim?
+Siapkan company profile & portofolio formal
+Prinsip Tidak Boleh Dilanggar
+Non-Negotiable Rules
+DP 50% wajib sebelum mulai kerja — tanpa kecuali
+Jangan terima project melebihi kapasitas tim 3 orang
+Rekening bisnis WAJIB terpisah dari personal
+Semua kesepakatan harus tertulis (invoice + kontrak)
+Tidak gunakan aset/waktu/jaringan kantor utama
+Dokumentasi teknis setiap instalasi sejak hari pertama
+DSKR Teknologi Indonesia — Brand Identity Document 2026 · Dhayu Fandy Stiawan
+Dokumen ini bersifat konfidensial. Seluruh elemen visual adalah milik DSKR Teknologi Indonesia.
