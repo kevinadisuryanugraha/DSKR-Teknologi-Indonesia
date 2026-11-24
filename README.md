@@ -55,6 +55,25 @@ Nomor bagian berurutan 01–27. Setiap bagian punya `id` yang bisa ditautkan lan
 5. Nomor versi dan tanggal di footer diperbarui setiap rilis.
 6. Halaman ini `noindex` dan berlabel internal. Jangan di-deploy publik apa adanya — bagian 10–18 memuat margin, formula harga, dan risk register.
 
+## Responsif
+
+Enam titik henti di `assets/brand.css`, semuanya di bawah satu set token.
+
+| Lebar | Ubah |
+|---|---|
+| ≤1024 | `--pad-x: 1.25rem` |
+| ≤900 | hero & `.split` satu kolom, `g3/g4` dua kolom, footer dua kolom, `--section-y: 3rem` |
+| ≤760 | `g2`, `.dodont` satu kolom |
+| ≤640 | `--topbar-h: 56px`, `--section-y: 2.75rem`, `--table-min: 520px`, semua grid satu kolom, tabel geser horizontal dengan kolom pertama menempel |
+| ≤480 | `--section-y: 2.25rem`, `--pad-x: 1rem`, hero h1 1.55rem |
+| ≤380 | hero h1 1.45rem, jarak nav dirapatkan |
+
+Token di `:root`: `--pad-x`, `--section-y`, `--topbar-h`, `--table-min`. `scroll-padding-top` dan `scroll-margin-top` dihitung dari `--topbar-h`, jadi jangkar tidak pernah tertutup topbar saat tingginya berubah.
+
+`@media (pointer: coarse)` menaikkan semua sasaran sentuh ke ≥44px di tablet maupun ponsel. `@media (hover: none)` mematikan keadaan hover.
+
+Diverifikasi otomatis (Chrome headless, 320/360/480/640/768/900/1024/1440): tidak ada overflow halaman, tidak ada kotak yang melampaui viewport, tidak ada elemen bertumpuk, tidak ada teks <12px. Tabel lebar hanya menggeser di dalam `.table-wrap`, bukan halaman.
+
 ## Blocker belum selesai
 
 - [ ] Kontak resmi: telepon, WhatsApp, email, alamat, handle sosial

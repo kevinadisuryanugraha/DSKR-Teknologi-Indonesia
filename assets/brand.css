@@ -58,19 +58,29 @@
   --shadow: 0 1px 2px rgba(21,35,66,.06), 0 8px 24px rgba(21,35,66,.06);
   --border: 1.5px solid var(--gray-100);
 
+  /* --- token layout responsif (diubah per breakpoint) --- */
+  --pad-x: 1.5rem;        /* padding kiri/kanan .wrap */
+  --section-y: 4.5rem;    /* padding atas/bawah section */
+  --topbar-h: 60px;       /* tinggi topbar + acuan scroll-padding */
+  --table-min: 560px;     /* lebar minimum tabel lebar */
+
   color-scheme: light;
   box-sizing: border-box;
-  scroll-padding-top: 72px;
+  scroll-padding-top: calc(var(--topbar-h) + 12px);
 }
 
 *, *::before, *::after { box-sizing: inherit; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0; font-family: var(--font); font-size: var(--fs-body); line-height: 1.65;
   background: var(--surface); color: var(--gray-900);
   -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;   /* string panjang tidak menembus kartu */
 }
+
+/* jangkar tidak tertutup topbar yang sticky */
+section[id], .part-head[id], .hero[id] { scroll-margin-top: calc(var(--topbar-h) + 8px); }
 
 /* ---------- NAV ---------- */
 .topbar {
@@ -78,7 +88,7 @@ body {
   background: var(--navy-dark); border-bottom: 2px solid var(--red);
 }
 .topbar-inner {
-  max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; height: 60px;
+  max-width: 1120px; margin: 0 auto; padding: 0 var(--pad-x); height: var(--topbar-h);
   display: flex; align-items: center; gap: 1.75rem;
 }
 .topbar .brand {
@@ -86,10 +96,16 @@ body {
   color: var(--white); font-weight: 800; font-size: .95rem; letter-spacing: .02em; white-space: nowrap;
 }
 .topbar .brand img { height: 22px; width: auto; }
-.topbar nav { display: flex; gap: 1.25rem; overflow-x: auto; }
+.topbar nav {
+  display: flex; gap: 1.25rem; min-width: 0; overflow-x: auto;
+  scrollbar-width: none; -ms-overflow-style: none; overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.topbar nav::-webkit-scrollbar { display: none; }
 .topbar nav a {
   color: var(--gray-200); font-size: var(--fs-sm); font-weight: 500;
   text-decoration: none; white-space: nowrap; padding: .25rem 0; border-bottom: 2px solid transparent;
+  touch-action: manipulation; flex: 0 0 auto;
 }
 .topbar nav a:hover, .topbar nav a:focus-visible { color: var(--white); border-bottom-color: var(--red-hi); }
 .topbar nav a[aria-current="page"] { color: var(--white); border-bottom-color: var(--red); font-weight: 700; }
@@ -99,9 +115,9 @@ body {
 }
 
 /* ---------- LAYOUT ---------- */
-section { padding: 4.5rem 0; border-bottom: 1px solid var(--gray-100); }
+section { padding: var(--section-y) 0; border-bottom: 1px solid var(--gray-100); }
 section:last-of-type { border-bottom: none; }
-.wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--pad-x); }
 .bg-white { background: var(--white); }
 .bg-surface { background: var(--surface); }
 .grid { display: grid; gap: 1.25rem; }
@@ -109,22 +125,25 @@ section:last-of-type { border-bottom: none; }
 .g3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .g4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+/* Semua anak grid boleh menyusut: tanpa ini min-width:auto membuat kolom
+   melar melebihi kontainer saat ada string/ tabel lebar di dalamnya. */
+.grid > *, .split > *, .dodont > *, .footer-grid > *, .toc-grid > *, .swatches > * { min-width: 0; }
 
 .eyebrow {
   font-size: var(--fs-caption); font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
   color: var(--red); margin: 0 0 .6rem;
 }
-h1, h2, h3, h4 { color: var(--navy); margin: 0 0 .75rem; line-height: 1.2; }
+h1, h2, h3, h4 { color: var(--navy); margin: 0 0 .75rem; line-height: 1.2; text-wrap: balance; }
 h1 { font-size: var(--fs-h1); font-weight: 800; }
 h2 { font-size: var(--fs-h2); font-weight: 800; }
 h3 { font-size: var(--fs-h3); font-weight: 700; }
 h4 { font-size: var(--fs-body); font-weight: 700; }
 p { margin: 0 0 1rem; }
-.lead { font-size: 1.0625rem; color: var(--gray-500); max-width: 62ch; }
+.lead { font-size: 1.0625rem; color: var(--gray-500); max-width: 62ch; text-wrap: pretty; }
 .muted { color: var(--gray-500); }
 .small { font-size: var(--fs-sm); }
 .caption { font-size: var(--fs-caption); color: var(--gray-500); }
-.mono { font-family: var(--mono); font-size: var(--fs-xs); }
+.mono { font-family: var(--mono); font-size: var(--fs-xs); overflow-wrap: break-word; word-break: break-word; }
 
 /* ---------- HERO ---------- */
 .hero {
@@ -199,9 +218,12 @@ ul.cross li::before { content: "✕"; position: absolute; left: 0; color: var(--
 .do li, .dont li { color: var(--gray-700); font-size: var(--fs-sm); }
 
 /* ---------- TABEL ---------- */
-.table-wrap { overflow-x: auto; border: var(--border); border-radius: var(--radius); background: var(--white); }
-table { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); min-width: 560px; }
-th, td { padding: .8rem .9rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--gray-100); }
+.table-wrap {
+  overflow-x: auto; border: var(--border); border-radius: var(--radius); background: var(--white);
+  overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch;
+}
+table { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); min-width: var(--table-min); }
+th, td { padding: .8rem .9rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--gray-100); overflow-wrap: break-word; }
 thead th {
   background: var(--navy); color: var(--white); font-size: var(--fs-caption);
   text-transform: uppercase; letter-spacing: .08em; font-weight: 700; position: sticky; top: 0;
@@ -246,7 +268,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 /* ---------- FOOTER ---------- */
 footer { background: var(--navy-dark); color: var(--gray-200); padding: 2.5rem 0; border-top: 2px solid var(--red); font-size: var(--fs-sm); }
 footer a { color: var(--red-hi); }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr .9fr; gap: 2rem; }
 footer h4 { color: var(--white); font-size: var(--fs-caption); letter-spacing: .12em; text-transform: uppercase; }
 footer ul { list-style: none; padding: 0; margin: 0; }
 footer li { margin-bottom: .35rem; color: var(--gray-200); }
@@ -296,17 +318,145 @@ footer li { margin-bottom: .35rem; color: var(--gray-200); }
 }
 .totop:hover, .totop:focus-visible { background: var(--red); }
 
-/* ---------- RESPONSIF ---------- */
+/* ---------- RESPONSIF ----------
+   Bertingkat: 1024 → 900 → 760 → 640 → 480 → 380.
+   Setiap turun satu tingkat, hanya mengurangi yang belum cukup.
+   Larangan: teks < 12px, grid berhimpitan, scroll horizontal di level halaman. */
+
+/* Tablet lanskap */
+@media (max-width: 1024px) {
+  :root { --pad-x: 1.25rem; }
+}
+
+/* Tablet: dua kolom masih nyaman, satu kolom mulai dipakai yang sempit */
 @media (max-width: 900px) {
-  .hero-grid, .split, .g4, .g3, .dodont, .footer-grid { grid-template-columns: 1fr; }
-  .g2 { grid-template-columns: 1fr; }
+  :root { --section-y: 3rem; }
+  .hero { padding: 3rem 0; }
+  .hero-grid, .split { grid-template-columns: 1fr; }
+  .hero-grid { gap: 2rem; }
   .hero h1 { font-size: 2rem; }
-  .hero-logo { max-width: 240px; }
-  .type-row { grid-template-columns: 1fr; gap: .35rem; }
+  .hero-logo { max-width: 220px; }
+  .g4, .g3 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.75rem; }
+  .type-row { grid-template-columns: 145px 1fr; gap: .35rem; }
+  .stat { font-size: 1.7rem; }
   .topbar .doc-tag { display: none; }
-  section { padding: 3rem 0; }
+  .part-head { padding: 2.25rem 0; }
   .part-num { font-size: 1.6rem; }
   .part-head h2 { font-size: 1.4rem; }
+}
+
+/* Tablet potret */
+@media (max-width: 760px) {
+  .g2, .dodont { grid-template-columns: 1fr; }
+  .grid { gap: 1rem; }
+  .card { padding: 1.25rem; }
+  .toc-grid { gap: 0 1.5rem; }
+  .swatches { gap: .875rem; }
+}
+
+/* HP besar / lanskap */
+@media (max-width: 640px) {
+  :root { --section-y: 2.75rem; --topbar-h: 56px; --table-min: 520px; --pad-x: 1.125rem; }
+  .g3, .g4, .footer-grid, .toc-grid { grid-template-columns: 1fr; }
+  .swatches { grid-template-columns: repeat(auto-fill, minmax(148px,1fr)); }
+
+  /* Hero: logo di atas, teks tidak melebar penuh */
+  .hero { padding: 2.75rem 0; }
+  .hero-grid { gap: 1.5rem; }
+  .hero h1 { font-size: 1.75rem; }
+  .hero-logo { max-width: 180px; }
+  .hero .lead { font-size: 1rem; }
+
+  /* Skala judul turun, tetapi tidak di bawah --fs-sm untuk body */
+  h1 { font-size: 1.85rem; }
+  h2 { font-size: 1.375rem; }
+  .lead { font-size: 1rem; }
+
+  /* Topbar: rail tautan bisa digeser, target sentuh ≥ 44px */
+  .topbar-inner { gap: .9rem; }
+  .topbar nav { gap: .85rem; }
+  .topbar nav a { padding: .8rem 0; font-size: var(--fs-xs); }
+  .topbar .brand { font-size: .875rem; min-height: 44px; }
+
+  .part-head { padding: 1.75rem 0; }
+  .part-head .wrap { gap: 1rem; }
+
+  /* Tabel: geser horizontal, sel lebih rapat, sentuh tetap 44px */
+  th, td { padding: .7rem .75rem; }
+
+  /* Kolom pertama menempel saat digeser: baris tetap terbaca di layar sempit.
+     Tanpa ini tabel 5-6 kolom kehilangan konteks saat di-scroll. */
+  table th:first-child, table td:first-child {
+    position: sticky; left: 0; z-index: 2;
+    background: var(--white);
+    box-shadow: 1px 0 0 var(--gray-100), 6px 0 10px -6px rgba(21,35,66,.28);
+  }
+  table thead th:first-child { z-index: 3; background: var(--navy); }
+  table tbody tr:nth-child(even) td:first-child { background: #FAFBFD; }
+  .logo-panel { padding: 1.5rem; }
+  .logo-panel img { width: 200px; }
+  .callout { padding: .9rem 1rem; }
+  .do, .dont { padding: .9rem 1rem; }
+
+  /* Sasaran sentuh 44px untuk semua kontrol non-inline */
+  .toc-grid a { padding: .6rem 0; min-height: 44px; align-items: center; }
+  .part-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .6rem .9rem; }
+  .totop { display: grid; }
+
+  footer { padding: 2rem 0; }
+  .footer-grid { gap: 1.5rem; }
+  .totop { width: 44px; height: 44px; right: .875rem; bottom: calc(.875rem + env(safe-area-inset-bottom)); }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+  :root { --section-y: 2.25rem; --pad-x: 1rem; }
+  .hero { padding: 2.25rem 0; }
+  .hero h1 { font-size: 1.55rem; }
+  h1 { font-size: 1.65rem; }
+  .card { padding: 1.05rem; }
+  .card-tight { padding: .9rem 1rem; }
+  .grid { gap: .875rem; }
+  .topbar .brand img { height: 20px; }
+  .topbar nav a { padding: .75rem 0; }
+  .part-links { gap: .4rem; }
+  .part-links a { flex: 1 1 100%; text-align: center; }
+  .tags { gap: .4rem; }
+  .tag { padding: .3rem .6rem; }
+  .swatch-block { height: 76px; }
+  .stat { font-size: 1.55rem; }
+  .type-row { grid-template-columns: 1fr; }
+  .table-wrap { border-radius: var(--radius-sm); }
+  footer img { height: 22px !important; }
+}
+
+/* HP sangat kecil (320–380px) */
+@media (max-width: 380px) {
+  .topbar-inner { gap: .7rem; }
+  .topbar nav { gap: .7rem; }
+  .topbar .brand { font-size: var(--fs-caption); }
+  .part-num { font-size: 1.35rem; }
+  .part-head h2 { font-size: 1.25rem; }
+  .hero h1 { font-size: 1.45rem; }
+  h1 { font-size: 1.5rem; }
+  .toc-grid a { font-size: var(--fs-xs); }
+}
+
+/* Layar sentuh: hilangkan keadaan khusus hover, perbesar sasaran sentuh */
+@media (hover: none) {
+  .topbar nav a:hover { color: var(--gray-200); border-bottom-color: transparent; }
+  .totop:hover { background: var(--navy); }
+}
+
+/* Perangkat berjari (tablet & ponsel): sasaran sentuh ≥ 44px
+   terlepas dari lebar viewport, termasuk tablet 768–1024px. */
+@media (pointer: coarse) {
+  .topbar .brand { min-height: 44px; }
+  .topbar nav a { padding: 1rem 0; }
+  .part-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .6rem .9rem; }
+  .toc-grid a { min-height: 44px; align-items: center; }
+  .totop { width: 44px; height: 44px; }
 }
 
 /* ---------- CETAK / PDF ---------- */
@@ -375,7 +525,7 @@ footer li { margin-bottom: .35rem; color: var(--gray-200); }
   .g3 { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 3mm; }
   .g4 { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 3mm; }
   .swatches { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 3mm; }
-  .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; gap: 6mm; }
+  .footer-grid { grid-template-columns: 1.6fr 1fr 1fr .9fr; gap: 6mm; }
   .type-row { grid-template-columns: 45mm 1fr; gap: 6mm; }
 
   /* kartu & panel: jangan terbelah */
@@ -394,6 +544,9 @@ footer li { margin-bottom: .35rem; color: var(--gray-200); }
   table { min-width: 0 !important; width: 100%; font-size: 8pt; }
   thead { display: table-header-group; }
   thead th { position: static !important; background: #152342 !important; color: #fff !important; font-size: 7pt; padding: 2mm 2mm; }
+  table th:first-child, table td:first-child { position: static !important; box-shadow: none !important; background: transparent !important; }
+  table thead th:first-child { background: #152342 !important; }
+  table tbody tr:nth-child(even) td:first-child { background: #FAFBFD !important; }
   th, td { padding: 1.8mm 2mm; border-bottom: .5pt solid #E8EAED; }
   tr { break-inside: avoid; }
   tbody tr:nth-child(even) { background: #FAFBFD !important; }
